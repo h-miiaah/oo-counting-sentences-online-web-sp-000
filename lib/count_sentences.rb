@@ -27,8 +27,8 @@ class String
   end
 
   def count_sentences
-    sentences_array = self.split(/\.|\?|\!/).reject{|string| string.empty?}
-    sentences_array.count
-    binding.pry
+    # binding.pry
+    sentences_array = self.split(/\.|\?|\!/).reject{|string| string.empty?} # create a new array and split self, rejecting all empty spaces in the array.
+    return sentences_array.count # return the count of all the sentences in the split array. 
   end
 end
